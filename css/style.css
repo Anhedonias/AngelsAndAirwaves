@@ -488,7 +488,355 @@ body {
 	}
 }
 
-@media (max-width: 657px) {
+@media (max-width: 1800px) {
+	.hero__title {
+		text-align: center;
+		width: 100%;
+		font-size: 90px;
+	}
+}
+
+@media (max-width: 768px) {
+	.section {
+		margin-top: 50px;
+	}
+	.header {
+		height: 70px;
+	}
+	.header__inner {
+		height: 70px;
+		justify-content: center;
+	}
+	.header-nav {
+		display: none;
+	}
+	.hero {
+		width: 100%;
+		background-image: url('../img/mobile.bg.jpg');
+		background-size: cover;
+		position: relative;
+	}
+	.hero__title {
+		text-align: center;
+		width: 100%;
+		font-size: 40px;
+	}
+	.release {
+		width: 350px;
+		height: 387px;
+		top: 45%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		position: absolute;
+		background-color: rgba(0, 0, 0, .5);
+		backdrop-filter: blur(6px);
+		padding: 15px;
+		z-index: 2;
+	}
+	.release__title {
+		font-size: 16px;
+		margin-top: 12px;
+	}
+	.dates-button {
+		width: 30%;
+		font-size: 14px;
+		padding: 16px 20px;
+	}
+	.social {
+		display: none;
+	}
+	.about__desc {
+		background-color: rgba(0, 0, 0, .8);
+		backdrop-filter: blur(6px);
+		padding: 10px;
+	}
+	.about__inner {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.albums__inner {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+	.albums-list {
+		justify-content: center;
+	}
+	.album__item {
+		margin-right: 20px;
+	}
+	.tour__inner {
+		display: none;
+	}
+	.tour__list {
+		width: 100%;
+		display: none;
+	}
+	.tour__date {
+		width: 25%;
+		font-size: 12px;
+	}
+	.tour__place {
+		margin-left: 15px;
+		margin-right: 0;
+		width: 20%;
+		font-size: 12px;
+	}
+	.tour__location {
+		width: 25%;
+		margin-right: 0;
+		font-size: 12px;
+		margin-left: 10px;
+	}	
+	.button-right {
+		margin: 0;
+		margin-left: 10px;
+	}
+
+	.tour-btn {
+		width: 100%;
+		font-size: 12px;
+		padding: 12px 14px;
+	}
+
+	.contact__inner {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.contact__title {
+		width: 100%;
+		text-align: center;
+		margin: 0;
+		margin-bottom: 20px;
+		margin-top: 10px;
+	}
+	.video-bg {
+		margin-top: -20px;
+		width: 100%;
+	}
+	.input {
+		width: 100%;
+	}
+	.btn-form {
+		width: 100%;
+		margin: 0;
+	}
+	.about-title {
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+	.section-title {
+		width: 100%;
+		display: block;
+		text-align: center;
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 992px) {
+	.section {
+		margin-top: 50px;
+	}
+	.header {
+		height: 70px;
+	}
+	.header__inner {
+		height: 70px;
+		justify-content: center;
+	}
+	.header-nav {
+		display: none;
+	}
+	.hero {
+		width: 100%;
+		background-image: url('../img/mobile.bg.jpg');
+		background-size: cover;
+		position: relative;
+	}
+	.hero__title {
+		text-align: center;
+		width: 100%;
+		font-size: 40px;
+	}
+	.release {
+		width: 350px;
+		height: 387px;
+		top: 45%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		position: absolute;
+		background-color: rgba(0, 0, 0, .5);
+		backdrop-filter: blur(6px);
+		padding: 15px;
+		z-index: 2;
+	}
+	.release__title {
+		font-size: 16px;
+		margin-top: 12px;
+	}
+	.dates-button {
+		width: 30%;
+		font-size: 14px;
+		padding: 16px 20px;
+	}
+	.social {
+		display: none;
+	}
+	.about__desc {
+		background-color: rgba(0, 0, 0, .8);
+		backdrop-filter: blur(6px);
+		padding: 10px;
+	}
+	.about__inner {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.albums__inner {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+	.albums-list {
+		justify-content: center;
+	}
+	.album__item {
+		margin-right: 20px;
+	}
+	.tour__inner {
+		display: none;
+	}
+	.tour__list {
+		width: 100%;
+		display: none;
+	}
+	.tour__date {
+		width: 25%;
+		font-size: 12px;
+	}
+	.tour__place {
+		margin-left: 15px;
+		margin-right: 0;
+		width: 20%;
+		font-size: 12px;
+	}
+	.tour__location {
+		width: 25%;
+		margin-right: 0;
+		font-size: 12px;
+		margin-left: 10px;
+	}	
+	.button-right {
+		margin: 0;
+		margin-left: 10px;
+	}
+
+	.tour-btn {
+		width: 100%;
+		font-size: 12px;
+		padding: 12px 14px;
+	}
+
+	.contact__inner {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.contact__title {
+		width: 100%;
+		text-align: center;
+		margin: 0;
+		margin-bottom: 20px;
+		margin-top: 10px;
+	}
+	.video-bg {
+		margin-top: -20px;
+		width: 100%;
+	}
+	.input {
+		width: 100%;
+	}
+	.btn-form {
+		width: 100%;
+		margin: 0;
+	}
+	.about-title {
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+	.section-title {
+		width: 100%;
+		display: block;
+		text-align: center;
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.section {
+		margin-top: 100px;
+	}
+	.header {
+		height: 100px;
+	}
+	.header__inner {
+		height: 100px;
+		justify-content: space-between;
+	}
+	.about__desc {
+		background-color: rgba(0, 0, 0, .5);
+		backdrop-filter: blur(6px);
+		padding: 20px;
+	}
+	.hero {
+		width: 100%;
+		background-image: url('../img/mobile.bg.jpg');
+		background-size: cover;
+		position: relative;
+	}
+	.hero__title {
+		text-align: center;
+		width: 100%;
+		font-size: 60px;
+	}
+	.release {
+		width: 350px;
+		height: 387px;
+		top: 45%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		position: absolute;
+		background-color: rgba(0, 0, 0, .5);
+		backdrop-filter: blur(6px);
+		padding: 15px;
+		z-index: 2;
+	}
+	.release__title {
+		font-size: 16px;
+		margin-top: 12px;
+	}
+	.dates-button {
+		width: 20%;
+		font-size: 16px;
+		padding: 16px 20px;
+	}
+	.social {
+		display: none;
+	}
+	.album__item {
+		margin-right: 20px;
+	}
+	.video-bg {
+		margin-top: -20px;
+		width: 100%;
+	}
+}
+
+@media (max-width: 576px) {
 	.section {
 		margin-top: 50px;
 	}
