@@ -132,6 +132,27 @@ body {
 	z-index: 2;
 }
 
+.release__image:after {
+	display: none;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-image: url(../img/play.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	z-index: 3;
+}
+
+.release__image:hover:after{
+	display: block;
+	z-index: 5;
+	backdrop-filter: blur(6px);
+	background-color: rgba(0, 0, 0, .2);
+}
+
 .release__title {
 	font-family: 'HelveticaNowText', sans-serif;
 	text-transform: uppercase;
