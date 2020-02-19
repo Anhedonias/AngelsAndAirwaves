@@ -84,6 +84,15 @@ body {
 	text-transform: uppercase;
 	font-size: 14px;
 	margin-right: 22px;
+	transition: color .2s ease;
+}
+
+.menu__link--active {
+	color: #E72D32
+}
+
+.nav__link:hover {
+	color: #E72D32;
 }
 
 .nav__link:last-child {
@@ -145,6 +154,14 @@ body {
 	font-size: 24px;
 	padding: 15px 25px;
 	font-weight: normal;
+
+	transition: color .2s ease, background-color .2s linear;
+}
+
+.dates-button:hover {
+	background-color: #E72D32;
+	color: #fff;
+	cursor: pointer;
 }
 
 .hero__title {
@@ -177,6 +194,11 @@ body {
 
 .social__link {
 	margin-bottom: 25px;
+
+}
+
+.social__link:hover {
+	color: #E72D32;
 }
 
 .social__link:last-child {
@@ -242,6 +264,13 @@ body {
 
 .album__item {
 	margin-bottom: 30px;
+	transform: perspective(600px) rotateY(-30deg);
+	transition: transform .3s;
+}
+
+.album__item:hover {
+	transform: rotateY(0);
+	cursor: pointer;
 }
 
 .album__cover {
@@ -287,35 +316,48 @@ body {
 }
 
 .tour__date {
-	width: 25%;
+	width: 20%;
 }
 
 .tour__place {
 	color: #a5a5a5;
-	width: 25%;
+	width: 30%;
 	margin-left: 200px;
-	margin-right: 200px;
+	margin-right: 100px;
 }
 
 .tour__location {
 	text-transform: uppercase;
+	margin-right: 200px;
 	width: 25%;
-	margin-right: 90px;
 }
 
 .button-right {
-	margin-left: auto;
-	width: 25%;
+	width: 30%;
 }
 
 .tour-btn {
+	width: 100%;
 	font-size: 14px;
 	padding: 10px 20px;
 	font-weight: bolder;
+	transition: color .2s ease, background-color .2s linear;
+	cursor: pointer;
+}
+
+.tour-btn:hover {
+	background-color: #E72D32;
+	color: #fff;
 }
 
 .disabled {
 	background-color: #343434;
+}
+
+.disabled:hover {
+	background-color: #343434;
+	color: #010101;
+	cursor: not-allowed;
 }
 
 .contact__inner {
@@ -337,12 +379,24 @@ body {
 	padding: 15px 22px;
 	background: #010101;
 	border: 1px solid #343434;
+	color: #fff;
+	outline: none;
+}
+
+.input:focus {
+	border: 1px solid #fff;
 }
 
 .btn-form {
 	margin-left: -5px;
 	padding: 16px 40px;
 	font-weight: bold;
+	transition: background-color .2s linear;
+}
+
+.btn-form:hover {
+	background-color: #E6E6E6;
+	cursor: pointer;
 }
 
 .video-bg {
@@ -970,5 +1024,65 @@ body {
 		display: block;
 		text-align: center;
 		font-size: 20px;
+	}
+}
+
+@media (max-width: 1400px) {
+	.section {
+		margin-top: 100px;
+	}
+	.header {
+		height: 100px;
+	}
+	.header__inner {
+		height: 100px;
+		justify-content: space-between;
+	}
+	.about__desc {
+		background-color: rgba(0, 0, 0, .5);
+		backdrop-filter: blur(6px);
+		padding: 20px;
+	}
+	.hero {
+		width: 100%;
+		background-image: url('../img/mobile.bg.jpg');
+		background-size: cover;
+		position: relative;
+	}
+	.hero__title {
+		text-align: center;
+		width: 100%;
+		font-size: 60px;
+	}
+	.release {
+		width: 350px;
+		height: 387px;
+		top: 45%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		position: absolute;
+		background-color: rgba(0, 0, 0, .5);
+		backdrop-filter: blur(6px);
+		padding: 15px;
+		z-index: 2;
+	}
+	.release__title {
+		font-size: 16px;
+		margin-top: 12px;
+	}
+	.dates-button {
+		width: 20%;
+		font-size: 16px;
+		padding: 16px 20px;
+	}
+	.social {
+		display: none;
+	}
+	.album__item {
+		margin-right: 20px;
+	}
+	.video-bg {
+		margin-top: -20px;
+		width: 100%;
 	}
 }

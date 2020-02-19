@@ -10,17 +10,17 @@
 </head>
 <body>
 
-	<header class="header">
+	<header class="header js-nav-menu">
 		<div class="container">
 			<div class="header__inner">
 					<a href="#" class="logo">
 						<img src="img/logo.svg" alt="logo">
 					</a>
 					<nav class="header-nav">
-						<a href="" class="nav__link">About</a>
-						<a href="" class="nav__link">Albums</a>
-						<a href="" class="nav__link">Tour</a>
-						<a href="" class="nav__link">Contact</a>
+						<a href="#about" class="nav__link js-page-scroll">About</a>
+						<a href="#albums" class="nav__link js-page-scroll">Albums</a>
+						<a href="#tour" class="nav__link js-page-scroll">Tour</a>
+						<a href="#contact" class="nav__link js-page-scroll">Contact</a>
 					</nav>
 			</div>
 		</div>
@@ -33,7 +33,7 @@
 						<div class="release__image">
 							<img src="img/single.jpg" alt="single">
 						</div>
-						<a href="https://www.youtube.com/watch?v=JMl8cQjBfqk" data-fancybox ><h4 class="release__title">The new single <span class="marker">kiss & tell</span> out now</h4></a>
+						<a href="https://www.youtube.com/watch?v=3ngEn5NVMiY" data-fancybox ><h4 class="release__title">The new single <span class="marker">kiss & tell</span> out now</h4></a>
 					</div>
 				<button class="btn dates-button">Tour dates & tickets</button>
 				<h1 class="hero__title">Angels & Airwaves</h1>
@@ -54,7 +54,7 @@
 			</div>
 		</section>
 		<!-- /hero -->
-		<section class="section about">
+		<section class="section about" id="about">
 			<div class="container">
 				<div class="about__inner">
 					<h2 class="section-title title">About</h2>
@@ -67,7 +67,7 @@
 			</div>
 		</section>
 		<!-- /about -->
-		<section class="section albums">
+		<section class="section albums" id="albums">
 			<div class="container">
 				<div class="albums__inner">
 					<h2 class="section-title about-title">Albums</h2>
@@ -140,7 +140,7 @@
 			</div>
 		</section>
 		<!-- /albums -->
-		<section class="section tour">
+		<section class="section tour" id="tour">
 			<div class="container">
 				<div class="tour__inner">
 					<h2 class="section-title title">Tour</h2>
@@ -159,7 +159,7 @@
 							<div class="tour__place">Boston Calling Music Festival</div>
 							<div class="tour__location">Boston, MA</div>
 							<div class="button-right">
-								<button class="btn tour-btn">sold out</button>
+								<button class="btn tour-btn">get ticket</button>
 							</div>
 						</div>
 						<div class="tour__item">
@@ -183,7 +183,7 @@
 							<div class="tour__place">L'Olympia</div>
 							<div class="tour__location">Montréal, Canada</div>
 							<div class="button-right">
-								<button class="btn tour-btn">sold out</button>
+								<button class="btn tour-btn">get ticket</button>
 							</div>
 						</div>
 						<div class="tour__item">
@@ -191,7 +191,7 @@
 							<div class="tour__place">Toad's Place</div>
 							<div class="tour__location">New Haven, CT</div>
 							<div class="button-right">
-								<button class="btn tour-btn">sold out</button>
+								<button class="btn tour-btn">get ticket</button>
 							</div>
 						</div>
 						<div class="tour__item">
@@ -199,7 +199,7 @@
 							<div class="tour__place">Starland Ballroom</div>
 							<div class="tour__location">Sayreville, NJ</div>
 							<div class="button-right">
-								<button class="btn tour-btn">sold out</button>
+								<button class="btn tour-btn">get ticket</button>
 							</div>
 						</div>
 						<div class="tour__item">
@@ -207,7 +207,7 @@
 							<div class="tour__place">The Norva</div>
 							<div class="tour__location">Norfolk, VA</div>
 							<div class="button-right">
-								<button class="btn tour-btn">sold out</button>
+								<button class="btn tour-btn">get ticket</button>
 							</div>
 						</div>
 						<div class="tour__item">
@@ -215,7 +215,7 @@
 							<div class="tour__place">Bunbury  Music Festival</div>
 							<div class="tour__location">Cincinnati, OH</div>
 							<div class="button-right">
-								<button class="btn tour-btn">sold out</button>
+								<button class="btn tour-btn">get ticket</button>
 							</div>
 						</div>
 						<div class="tour__item">
@@ -231,7 +231,7 @@
 							<div class="tour__place">Bunbury  Music Festival</div>
 							<div class="tour__location">Cincinnati, OH</div>
 							<div class="button-right">
-								<button class="btn tour-btn">sold out</button>
+								<button class="btn tour-btn">get ticket</button>
 							</div>
 						</div>
 					</div>
@@ -239,28 +239,27 @@
 			</div>
 		</section>
 		<!-- /tour -->
-		<section class="section contact">
+		<section class="section contact" id="contact">
 			<div class="container">
 				<div class="contact__inner">
 					<h2 class="section-title title">Ready?</h2>
 					<span class="contact__title">Get email updates</span>
 					<form action="#" class="contact-form">
-						<input type="email" class="input" placeholder="Your email">
+						<input type="email" class="input" required placeholder="Your email">
 						<button class="btn btn-form">Subscribe</button>
 					</form>
 				</div>
 			</div>
 			<div class="video">
-				<div class="container">
 					<video class="video-bg" autoplay loop muted>
 						<source src="video/Tom_Hands.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
 					</video>
-				</div>
 			</div>
 		</section>
 		<!-- /contact -->
 	</main>
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
