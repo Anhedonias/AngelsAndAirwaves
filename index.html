@@ -6,6 +6,7 @@
 	<title>AVA - Angels And Airwaves</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
 </head>
 <body>
 
@@ -28,12 +29,12 @@
 	<main>
 		<section class="hero">
 			<div class="container">
-				<div class="release">
-					<div class="release__image">
-						<img src="img/single.jpg" alt="single">
+					<div class="release">
+						<div class="release__image">
+							<img src="img/single.jpg" alt="single">
+						</div>
+						<a href="https://www.youtube.com/watch?v=JMl8cQjBfqk" data-fancybox ><h4 class="release__title">The new single <span class="marker">kiss & tell</span> out now</h4></a>
 					</div>
-					<h4 class="release__title">The new single <span class="marker">kiss & tell</span> out now</h4>
-				</div>
 				<button class="btn dates-button">Tour dates & tickets</button>
 				<h1 class="hero__title">Angels & Airwaves</h1>
 				<div class="social">
@@ -251,13 +252,15 @@
 			</div>
 			<div class="video">
 				<div class="container">
-						<video class="video-bg" autoplay loop muted>
-							<source src="video/Tom_Hands.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-						</video>
+					<video class="video-bg" autoplay loop muted>
+						<source src="video/Tom_Hands.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+					</video>
 				</div>
 			</div>
 		</section>
 		<!-- /contact -->
 	</main>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 </body>
 </html>
