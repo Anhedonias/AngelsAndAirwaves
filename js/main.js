@@ -40,10 +40,10 @@ class NavigationMenu {
   
   bindEvents() {
     document.addEventListener('click', (event) => {
-      event.preventDefault();
       const target = event.target;
       
       if (target.classList.contains('js-page-scroll')) {
+        event.preventDefault();
         const id = target.hash;
         
         smoothScroll(id, 1000);
@@ -51,7 +51,7 @@ class NavigationMenu {
     });
     
     window.addEventListener("scroll", event => {
-      let fromTop = window.scrollY + headerHeight + 200;
+      let fromTop = window.scrollY + headerHeight;
 
       this.links.forEach(link => {
         let section = document.querySelector(link.hash);
@@ -71,12 +71,3 @@ class NavigationMenu {
 
 const menuNode = document.querySelector('.js-nav-menu');
 const Menu = new NavigationMenu(menuNode);
-
-$(function(){
-
-	$('.dates-button').on('click', function(e){
-		$('html,body').stop().animate({ scrollTop: $('#tour').offset().top }, 1000);
-		e.preventDefault();
-	});
-	
-	});
